@@ -1,0 +1,179 @@
+.dark-mode {
+    background: rgb(26, 32, 44);
+    color: #fff;
+    transition: ease-in-out .2s;
+}
+
+
+header {
+    padding: 15px 20px;
+    box-shadow: 0 2px 2px grey;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.switch {
+   text-align: right;
+}
+
+header .fa {
+    font-size: xx-small;
+}
+
+.container {
+    width: 100%;
+    padding:1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+}
+
+aside {
+    grid-column: 1/2;
+    background: #f2f2f2;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+h3 {
+    grid-row: 1/2;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+.weather {
+    grid-row: 2/3;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px rgba(0,0,0,.5);
+    position: relative;
+    height: 180px;
+}
+
+.weather-image {
+    width: 25%;
+    background-color:#1a237e;
+    border-radius: 10px;
+    padding: 1.5rem;
+    
+}
+
+.weather-image i {
+    font-size: 50px;
+    color:goldenrod;
+    z-index: 1 ;
+}
+
+.weather-state {
+   display: grid;
+   place-items: center;
+   text-align: center;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 1rem;
+   padding: 1rem;
+   color:black
+
+
+}
+
+
+.weather-state h1 {
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: .8rem;
+}
+
+hr {
+    grid-row: 3/4;
+}
+
+h2 {
+    padding:.2rem 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+.conversion {
+    grid-row: 4/5;
+    display: grid;
+    
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 4px 2px rgba(0,0,0,.5);
+    height: 230px;
+
+}
+form{
+    padding: 1rem;
+}
+
+
+.form-group:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+        color:black;
+        font-size: 1rem;
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 50%;
+        display: block;
+        transition: all .3s;
+   
+        
+}
+.form-control::placeholder {
+        color:black;
+        
+        
+}
+
+.form-control:focus {
+    outline: none;
+    border-bottom: 3px solid green;
+}
+
+.form-control:focus:invalid {
+    border-bottom: 3px solid orangered;
+}
+
+.conversion button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #1a237e;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    color: wheat;
+}
+
+
+
+
+/* map seacrh */
+.map {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: #f2f2f2;
+}
+
+.map-control {
+    width: 100%;
+    font-size: 1rem;
+        border-bottom: 3px solid transparent;
+        display: block;
+        transition: all .3s;
+        font-family: 'Nunito', sans-serif;
+}
+
+
+#googleMap {
+    background: gainsboro;
+    width: 100%;
+    height: 80vh;
+}
+
+
+
