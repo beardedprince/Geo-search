@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo- Search | Home </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/responsiveness.css">
+
+    <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+  <!-- End  -->
+</head>
+<body id="body">
+    <header>
+        <span class="far fa-compass fa-2x"></span>
+        <span class=" fas fa-moon fa-2x switch" id="switch"></span>
+        
+    </header>
+    <div class="container">
+        <aside> 
+            <h3>Weather condition</h3>
+            <section class="weather">
+                <div class="weather-image">
+                    <i class="fas fa-cloud-moon-rain"></i>
+                </div>
+                <div class="weather-state">
+                    <span>
+                        <h1> Northwest</h1>
+                        <p> Wind Speed </p>
+                    </span>
+                    <span>
+                        <h1> 65%</h1>
+                        <p> Humidity </p>
+                    </span>
+                    <span>
+                        <h1> 20c</h1>
+                        <p> current temp </p>
+                    </span>
+                </div>
+            </section>
+
+
+            <hr>
+            
+            <section class="conversion">
+                <h2> Conversion Table </h2>
+                    <form id="conversionForm" >
+                        <div class="form-group">
+                            <input type="text" id="cel" class="form-control" placeholder="celcius">
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="text" id="far" class="form-control" placeholder="farenheit">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" id="submit">Convert</button>
+                        </div>
+                        <span class="conversion_answer" >
+                            <h2 id="conversion_answer"> </h2>
+                        </span>
+                    </form>
+                    
+                
+                
+                
+            </section>
+
+        </aside>
+        <section class="map">
+            <input type="text" class="map-control" placeholder="Enter your search">
+            <div id="googleMap" >
+            google</div>
+        </section>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
