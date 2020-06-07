@@ -4,6 +4,23 @@
     transition: ease-in-out .2s;
 }
 
+.dark-mode aside .weather{
+    background: rgb(26, 32, 44);
+}
+.dark-mode aside .conversion{
+    background: rgb(26, 32, 44);
+}
+
+.dark-mode aside .weather .weather-state{
+    color: wheat
+}
+.dark-mode aside  .conversion{
+    color: wheat
+}
+
+.dark-mode aside  .conversion #conversion_answer{
+    color: black
+}
 
 header {
     padding: 15px 20px;

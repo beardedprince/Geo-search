@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geo- Search | Home </title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsiveness.css">
 
     <!-- font awesome -->
@@ -26,19 +26,23 @@
             <h3>Weather condition</h3>
             <section class="weather">
                 <div class="weather-image">
-                    <i class="fas fa-cloud-moon-rain"></i>
+                    <img src="" alt="" id="w_icon" alt="weather icon">
+                    <h5 id="desc" ></h5>
+                </div>
+                <div class="weather-name">
+                    <h1 id="name"> </h1>
                 </div>
                 <div class="weather-state">
                     <span>
-                        <h1> Northwest</h1>
+                        <h1 id="wind">  </h1>
                         <p> Wind Speed </p>
                     </span>
                     <span>
-                        <h1> 65%</h1>
+                        <h1 id="humidity"> </h1>
                         <p> Humidity </p>
                     </span>
                     <span>
-                        <h1> 20c</h1>
+                        <h1 id="temp"></span></h1>
                         <p> current temp </p>
                     </span>
                 </div>
@@ -73,7 +77,8 @@
 
         </aside>
         <section class="map">
-            <input type="text" class="map-control" placeholder="Enter your search">
+                <input type="text" id="map" class="map-control" placeholder="Enter your search">  
+                <input type="submit" class="map-search" id="search" value="search">
             <div id="googleMap" >
             google</div>
         </section>

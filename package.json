@@ -1,0 +1,22 @@
+{
+  "name": "geo-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beardedprince/Geo-search.git"
+  },
+  "author": "Alaketu Olamilekan Soliu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beardedprince/Geo-search/issues"
+  },
+  "homepage": "https://github.com/beardedprince/Geo-search#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0"
+  }
+}

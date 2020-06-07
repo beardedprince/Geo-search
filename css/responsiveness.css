@@ -23,6 +23,14 @@
         
     }
 
+    .weather-name {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+    }
+
     .map {
         grid-row: 1/2;
         grid-column: 1/2;
@@ -51,12 +59,24 @@
         padding: 1rem;
     }
 
+    .weather {
+        height: 250px;
+    }
+
     .weather-image {
-        width: 15%;
+        width: 25%;
         background-color:#1a237e;
         border-radius: 10px;
         padding: 1.5rem;
         
+    }
+
+    .weather-name {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
     }
 
     .map {
@@ -89,11 +109,19 @@
     }
 
     .weather-image {
-        width: 20%;
+        width: 30%;
         background-color:#1a237e;
         border-radius: 10px;
         padding: 1.5rem;
         
+    }
+
+    .weather-name {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
     }
 
     .map {
@@ -131,15 +159,23 @@
         border-radius: 10px;
         box-shadow: 2px 4px 2px rgba(0,0,0,.5);
         position: relative;
-        height: 200px;
+        height: 220px;
     }
 
     .weather-image {
-        width: 25%;
+        width: 35%;
         background-color:#1a237e;
         border-radius: 10px;
         padding: 1.5rem;
         
+    }
+
+    .weather-name {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
     }
 
     .map {
@@ -177,16 +213,36 @@
         border-radius: 10px;
         box-shadow: 2px 4px 2px rgba(0,0,0,.5);
         position: relative;
-        height: 200px;
+        height: 240px;
     }
 
     .weather-image {
-        width: 30%;
+        width: 35%;
         background-color:#1a237e;
         border-radius: 10px;
         padding: 1.5rem;
         
     }
+
+    .weather-name {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .conversion_answer {
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+        width: 120px;
+        padding: 2rem 2rem;
+        text-align: center;
+        background: gainsboro;
+        border-radius: 10px;
+    }
+
 
     .map {
         grid-row: 1/2;
@@ -223,15 +279,34 @@
         border-radius: 10px;
         box-shadow: 2px 4px 2px rgba(0,0,0,.5);
         position: relative;
-        height: 200px;
+        height: 220px;
     }
 
     .weather-image {
-        width: 35%;
+        width: 50%;
         background-color:#1a237e;
         border-radius: 10px;
         padding: 1.5rem;
         
+    }
+
+    .weather-name {
+        position: absolute;
+        top: 15px;
+        left: 55%;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .conversion_answer {
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+        width: 120px;
+        padding: 2rem 2rem;
+        text-align: center;
+        background: gainsboro;
+        border-radius: 10px;
     }
 
     .map {
@@ -259,7 +334,7 @@
         grid-row: 3/4;
         background: #f2f2f2;
         display: grid;
-        padding: 1rem;
+        padding: .5rem;
     }
 
     .weather {
@@ -268,16 +343,36 @@
         border-radius: 10px;
         box-shadow: 2px 4px 2px rgba(0,0,0,.5);
         position: relative;
-        height: 200px;
+        height: 250px;
     }
 
     .weather-image {
-        width: 35%;
+        width: 40%;
         background-color:#1a237e;
         border-radius: 10px;
         padding: 1.5rem;
         
     }
+
+    .weather-name {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .conversion_answer {
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+        width: 96px;
+        text-align: center;
+        background: gainsboro;
+        border-radius: 10px;
+    }
+
+    
 
     .map {
         grid-row: 1/2;
@@ -325,6 +420,14 @@
         border-radius: 10px;
         padding: 1.5rem;
         
+    }
+
+    .weather-name {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
     }
 
     .map {
