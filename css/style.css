@@ -60,21 +60,32 @@ h3 {
     border-radius: 10px;
     box-shadow: 2px 4px 2px rgba(0,0,0,.5);
     position: relative;
-    height: 180px;
+    height: 210px;
 }
 
 .weather-image {
-    width: 25%;
+    width: 40%;
     background-color:#1a237e;
     border-radius: 10px;
     padding: 1.5rem;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
     
 }
 
-.weather-image i {
-    font-size: 50px;
-    color:goldenrod;
-    z-index: 1 ;
+.weather-image img {
+    width: fit-content;
+}
+
+
+
+.weather-name {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
 }
 
 .weather-state {
@@ -92,6 +103,7 @@ h3 {
 .weather-state h1 {
     font-family: 'Nunito', sans-serif;
     padding-bottom: .8rem;
+    font-weight: bold;
 }
 
 hr {
@@ -173,14 +185,23 @@ form{
 
 }
 
-.map-control {
-    width: 100%;
-    font-size: 1rem;
+.map-search {
+ padding: 5px 14px; 
+  font-size: 1rem;
         border-bottom: 3px solid transparent;
-        display: block;
         transition: all .3s;
         font-family: 'Nunito', sans-serif;
 }
+.map-control {
+    width: 90%;
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+        transition: all .3s;
+        font-family: 'Nunito', sans-serif;
+        display: inline;
+}
+
+
 
 
 #googleMap {
