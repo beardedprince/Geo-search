@@ -65,7 +65,7 @@ getButton.addEventListener('click',  () => {
       document.getElementById('w_icon').setAttribute('src', iconurl)
       document.getElementById('wind').textContent = data.wind.speed
       document.getElementById('humidity').textContent = data.main.humidity + "%"
-      document.getElementById('temp').textContent = data.main.temp +  `<sup>o</sup>c`
+      document.getElementById('temp').innerHTML = data.main.temp +  `<sup>o</sup>c`
     })
     .catch(err => { 
         throw err 
