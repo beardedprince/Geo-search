@@ -51,14 +51,14 @@ const getName = document.getElementById('wind');
 // fetch weather using api
 getButton.addEventListener('click',  () => {
     const getWeatherInput = map.value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${getWeatherInput}&appid=656a97293886e24789886d4e5b64c59a`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${getWeatherInput}&appid=656a97293886e24789886d4e5b64c59a`;
     fetch(url)
     .then(res => res.json())
     .then((data) => {
       console.log(data);
       let icon = data.weather[0].icon;
       let description = data.weather[0].description;
-      let iconurl = "http://openweathermap.org/img/w/" + icon + ".png";
+      let iconurl = "https://openweathermap.org/img/w/" + icon + ".png";
       console.log('icon url', iconurl);
       document.getElementById('name').textContent = data.name
       document.getElementById('desc').textContent = description
