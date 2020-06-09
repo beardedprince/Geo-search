@@ -85,7 +85,7 @@
         </aside>
         <section class="map">
             <input type="text" id="map" class="map-control" placeholder="Enter your search">
-            <input type="submit" class="map-search" id="search" value="search">
+            <input type="submit"  class="map-search" id="search" value="search">
             <div id="googleMap">
 
             </div>
@@ -93,35 +93,38 @@
     </div>
 
     <script>
-        let autocomplete;
+        // let autocomplete;
         
-        function initMap() {
-            var cordinates = { lat: 6.6459771, lng: 3.5148512 };
-            var map = new google.maps.Map(document.getElementById("googleMap"), {
-                zoom: 15,
-                center: cordinates
-            });
+        // function initMap() {
+        //     var cordinates = { lat: 6.6459771, lng: 3.5148512 };
+        //     var map = new google.maps.Map(document.getElementById("googleMap"), {
+        //         zoom: 15,
+        //         center: cordinates
+        //     });
             
-            let mapInput = document.getElementById('map')
-            // let options = {
-            //     types: ['all'],
-            //     componentRestrictions: {'country':['AU']},
-            //     fields: ['place_id', 'geometry', 'name']
-            // }
-            autocomplete = new google.maps.places.Autocomplete(mapInput );
+        //     let mapInput = document.getElementById('map')
+        //     // let options = {
+        //     //     types: ['establishment'],
+        //     //     fields: ['place_id', 'geometry', 'name']
+        //     // }
+        //     autocomplete = new google.maps.places.Autocomplete(mapInput);
 
-            autocomplete.addEventListener('place_changed', onPlaceChanged);
-        }
+        // }
+        
+        // autocomplete.addEventListener('place_changed', function () {
+           
+        //     let place = autocomplete.getPlace();
+        //     console.log(place)
 
-        function onPlaceChanged() {
-            let place = autocomplete.getPlace();
+        //     if(!place.geometry) {
+        //         document.getElementById('map').placeholder = 'enter a place'
+        //     } else {
+        //         document.getElementById('googleMap').innerHTML = place.name
+        //     }
+        // }
+        // );
 
-            if(!place.geometry) {
-                document.getElementById('map').placeholder = 'enter a place'
-            } else {
-                document.getElementById('googleMap').innerHTML = place.name
-            }
-        } 
+        
     </script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMk3VYQ-CIuFYnMGOPxZiVDkT63A6kumY&libraries=places&callback=initMap"
