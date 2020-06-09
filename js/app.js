@@ -51,14 +51,14 @@ const getName = document.getElementById('wind');
 // fetch weather using api
 getButton.addEventListener('click',  () => {
     const getWeatherInput = map.value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${getWeatherInput}&appid=656a97293886e24789886d4e5b64c59a`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${getWeatherInput}&appid=656a97293886e24789886d4e5b64c59a`;
     fetch(url)
     .then(res => res.json())
     .then((data) => {
       console.log(data);
       let icon = data.weather[0].icon;
       let description = data.weather[0].description;
-      let iconurl = "http://openweathermap.org/img/w/" + icon + ".png";
+      let iconurl = "https://openweathermap.org/img/w/" + icon + ".png";
       console.log('icon url', iconurl);
       document.getElementById('name').textContent = data.name
       document.getElementById('desc').textContent = description
@@ -70,13 +70,78 @@ getButton.addEventListener('click',  () => {
     .catch(err => { 
         throw err 
     });
-
-
-// update
     
 })
 
+// get map
 
+let autocomplete;
+        
+        function initMap() {
+            var cordinates = { lat: 6.6459771, lng: 3.5148512 };
+            var map = new google.maps.Map(document.getElementById("googleMap"), {
+                zoom: 15,
+                center: cordinates
+            });
+
+            var marker = new google.maps.Marker({
+                position: cordinates,
+                map: map,
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+              });
+
+            marker.addListener('click', toggleBounce);
+            
+            let mapInput = document.getElementById('map')
+            // let options = {
+            //     types: ['establishment'],
+            //     fields: ['place_id', 'geometry', 'name']
+            // }
+            autocomplete = new google.maps.places.Autocomplete(mapInput);
+
+            // autocomplete.addEventListener('place_changed', onPlaceChanged); 
+                       var geocoder = new google.maps.Geocoder();
+
+            document.getElementById('search').addEventListener('click', function() {
+                geocodeAddress(geocoder, map);
+              });
+
+        }
+
+        function onPlaceChanged() {
+            let place = autocomplete.getPlace();
+
+            if(!place.geometry) {
+                document.getElementById('map').placeholder = 'enter a place'
+            } else {
+                document.getElementById('googleMap').innerHTML = place.name
+            }
+        } 
+
+        function toggleBounce() {
+            if (marker.getAnimation() !== null) {
+              marker.setAnimation(null);
+            } else {
+              marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
+          }
+
+        function geocodeAddress(geocoder, resultsMap) {
+            let address = document.getElementById('map').value;
+            geocoder.geocode({'address': address}, function(results, status) {
+                if (status === 'OK') {
+                  resultsMap.setCenter(results[0].geometry.location);
+                  var marker = new google.maps.Marker({
+                    map: resultsMap,
+                    position: results[0].geometry.location
+                  });
+                } else {
+                  alert('Geocode was not successful for the following reason: ' + status);
+                }
+              });
+        }
+        
 
 
 
