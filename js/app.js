@@ -50,8 +50,8 @@ const getName = document.getElementById('wind');
   
 // fetch weather using api
 getButton.addEventListener('click',  () => {
-    const getMapInput = map.value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${getMapInput}&appid=656a97293886e24789886d4e5b64c59a`;
+    const getWeatherInput = map.value;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${getWeatherInput}&appid=656a97293886e24789886d4e5b64c59a`;
     fetch(url)
     .then(res => res.json())
     .then((data) => {
@@ -70,8 +70,14 @@ getButton.addEventListener('click',  () => {
     .catch(err => { 
         throw err 
     });
+
+
+
+    
 })
 
- 
+
+
+
 
 
