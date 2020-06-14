@@ -137,22 +137,14 @@ form{
 .form-control {
         color:inherit;
         font-size: 1rem;
-        border: none;
-        border-bottom: 3px solid transparent;
+        /* border: none; */
         width: 50%;
         display: block;
         transition: all .3s;
         
 }
 
-.form-control:focus {
-    outline: none;
-    border-bottom: 3px solid green;
-}
 
-.form-control:focus:invalid {
-    border-bottom: 3px solid orangered;
-}
 
 .conversion button{
     padding: 10px 20px;

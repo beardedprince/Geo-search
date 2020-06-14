@@ -22,28 +22,30 @@ darkmode.addEventListener('click', ()=> {
 
 })
 
-// conversion of temparature
-button.addEventListener('click', (e) => {
-    e.preventDefault()
-   const celcius = celInput.value;
-   answer.textContent = converC(celcius);
-   conversion_form.reset()
-} )
-
-faraInput.addEventListener('blur', (e) => {
-    e.preventDefault()
-   const faraheint = faraInput.value;
-   answer.textContent = converF(faraheint);
-   conversion_form.reset()
-} )
-
 const converC = function convertToFaraheint(input) {
     return ((input * 9/5) + 32)
 }
   
 const converF = function convertToCelcius(input) {
-    return ((input -32) / 1.8)
+    return ((input - 32) / 1.8)
 }
+
+// conversion of temparature
+celInput.addEventListener('blur', (e) => {
+    e.preventDefault()
+   const celcius = celInput.value;
+   answer.textContent = converC(celcius) +  `F`;
+   conversion_form.reset()
+} )
+
+faraInput.addEventListener('blur', (e) => {
+    e.preventDefault()
+   const faraheint = parseFloat(faraInput.value);
+   answer.innerHTML = converF(faraheint) + `<sup>o</sup>c`;
+   conversion_form.reset()
+} )
+
+
 
 
 const getName = document.getElementById('wind');
@@ -87,6 +89,7 @@ let autocomplete;
             var marker = new google.maps.Marker({
                 position: cordinates,
                 map: map,
+                
                 draggable: true,
                 animation: google.maps.Animation.DROP,
               });
