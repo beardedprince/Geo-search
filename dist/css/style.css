@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    scroll-behavior: smooth;
+    background-color: #fff;
+}
+
+
+
+
+header {
+    padding: 15px 20px;
+    box-shadow: 0 2px 2px grey;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.switch {
+   text-align: right;
+}
+
+header .fa {
+    font-size: xx-small;
+}
+
+.container {
+    width: 100%;
+    padding:1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+}
+
+aside {
+    grid-column: 1/2;
+    background: #f2f2f2;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+h3 {
+    grid-row: 1/2;
+    font-family: 'Nunito', sans-serif;
+}
+
+.weather {
+    grid-row: 2/3;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px rgba(0,0,0,.5);
+    position: relative;
+    height: 210px;
+}
+
+.weather-image {
+    width: 40%;
+    background-color:#1a237e;
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+
+.weather-image img {
+    width: fit-content;
+}
+
+
+
+.weather-name {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.weather-state {
+   display: grid;
+   place-items: center;
+   text-align: center;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 1rem;
+   padding: 1rem
+
+
+}
+
+
+.weather-state h1 {
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: .8rem;
+    font-weight: bold;
+}
+
+hr {
+    grid-row: 3/4;
+}
+
+h2 {
+    padding:.2rem 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+.conversion {
+    grid-row: 4/5;
+    display: grid;
+    
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 4px 2px rgba(0,0,0,.5);
+    height: 230px;
+
+}
+form{
+    padding: 1rem;
+    position: relative;
+}
+
+
+.form-group:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+        color:inherit;
+        font-size: 1rem;
+        /* border: none; */
+        width: 50%;
+        display: block;
+        transition: all .3s;
+        
+}
+
+
+
+.conversion button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #1a237e;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    color: wheat;
+}
+
+.conversion_answer {
+    position: absolute;
+    right: 2rem;
+    top: .5rem;
+    width: 150px;
+    padding: 2rem 2rem;
+    background: gainsboro;
+    border-radius: 10px;
+}
+
+
+/* map seacrh */
+.map {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: #f2f2f2;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.map-search {
+ padding: 5px 14px; 
+  font-size: 1rem;
+        border-bottom: 3px solid transparent;
+        transition: all .3s;
+        font-family: 'Nunito', sans-serif;
+}
+.map-control {
+    width: 90%;
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+        transition: all .3s;
+        font-family: 'Nunito', sans-serif;
+        display: inline;
+}
+
+
+
+
+#googleMap {
+    background: gainsboro;
+    width: 100%;
+    height: 80vh;
+}
+
+
+
