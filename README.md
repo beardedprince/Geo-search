@@ -4,7 +4,6 @@ Geo search application is an application that allows you to get information abou
 
 # Dependencies
 - FontAwesome
-- GoogleFont
 - GoogleMap
 
 - npm
