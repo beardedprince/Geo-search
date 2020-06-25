@@ -9,10 +9,10 @@ Geo search application is an application that allows you to get information abou
 - convert Farenheit to Celcius
 
 # 3rd party APIs
-- GoogleMap
-- openweathermap
-- npm
-- Task runner (gulp)
+- [GoogleMap](https://developers.google.com/maps/documentation)
+- [openweathermap](http://api.openweathermap.org/)
+- [npm](https://www.npmjs.com)
+- [Task runner (gulp)](https://gulpjs.com/)
 
 # Installation
   on local machine
