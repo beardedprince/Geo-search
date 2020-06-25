@@ -1,14 +1,18 @@
 ### Geo-search
 Geo search application is an application that allows you to get information about certain geographical area. Map of the area including its present weather condition can be know. THis is also to refresh my vanilla JavaScript skills.
 
+# Features of the App
+- Get weather of a place of interest
+- Google Map autocomplete search
+- Search based on geocoding
+- convert Celcius to Farenheit
+- convert Farenheit to Celcius
 
 # 3rd party APIs
 - GoogleMap
 - openweathermap
-
-
 - npm
-- gulp
+- Task runner (gulp)
 
 # Installation
   on local machine
